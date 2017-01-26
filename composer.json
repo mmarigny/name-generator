@@ -16,7 +16,7 @@
         }
     ],
     "autoload": {
-        "psr-0" : "Mmarigny\\NameGenerator\\": "/src"
+        "psr-0" : { "Mmarigny\\NameGenerator\\" : ["/src"] }
     },
     "scripts": {
         "test": "./test.php"
