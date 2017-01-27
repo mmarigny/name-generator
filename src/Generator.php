@@ -56,7 +56,7 @@ class Generator
 	}
 
 
-	public function getName($gender = '', $countryCode = "")
+	public function getName($countryCode = "", $gender = '')
 	{
 		if (false == empty($countryCode))	// get a name for a given cc
 		{
@@ -73,13 +73,17 @@ class Generator
 			$countryCode = $this->countryCodes[$rand];
 		}
 
-        if (empty($gender))
+        if ('female' != $gender && 'male' != $gender)
         {
             $gender = rand(0, 1) ? 'female' : 'male';
         }
 
+		$ok = count($this->data[$countryCode][$gender]);
+
         $lastname = $this->data[$countryCode]['lastname'][rand(0, count($this->data[$countryCode]['lastname']) - 1)];
-        $firstname = $this->data[$countryCode][$gender][rand(0, count($this->data[$countryCode][$gender]) - 1)];
+        $firstname = $this->data[$countryCode][$gender][rand(0, 
+        	count($this->data[$countryCode][$gender]) - 1)
+        ];
 
         return [
             'firstname' => $firstname,
