@@ -34,8 +34,7 @@ print_r($name);
 ```
 
 #### output
-    ``` shell
-    Array
+    ```Array
     (
         [firstname] => Laurine
         [lastname] => BEL
