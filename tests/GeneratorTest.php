@@ -1,10 +1,12 @@
 <?php
 
+use Mmarigny\NameGenerator\Generator;
+
 class GeneratorTest extends PHPUnit_Framework_TestCase
 {
     public function testGenerate()
     {
-        $generator = new Mmarigny\NameGenerator\Generator();
+        $generator = new Generator();
         $name = $generator->getName();
         
         $this->assertInternalType('array', $name);
@@ -16,7 +18,7 @@ class GeneratorTest extends PHPUnit_Framework_TestCase
 
     public function testGenerateCountryCode()
     {
-        $generator = new Mmarigny\NameGenerator\Generator();
+        $generator = new Generator();
         $name = $generator->getName('FR');
         
         $this->assertInternalType('array', $name);
