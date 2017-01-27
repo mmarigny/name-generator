@@ -30,6 +30,17 @@ Usage
 ```php
 use Mmarigny\NameGenerator\Generator;
 $name = $generator->getName();
+print_r($name);
 ```
 
+#### output
+    ``` shell
+    Array
+    (
+        [firstname] => Laurine
+        [lastname] => BEL
+        [gender] => female
+        [country] => FR
+    )
+    ```
 #### Contact: melvyn.marigny@gmail.com
