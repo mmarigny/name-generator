@@ -17,7 +17,7 @@ Installation
    ``` json
     {
         "require": {
-            "mmarigny/name-generator": "~0.2"
+            "mmarigny/name-generator": "~0.3"
         }
     }
     ```
