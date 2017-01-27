@@ -13,6 +13,7 @@ Installation
 
 ### Edit your composer.json
   1. Adding name-generator to require in your composer.json:
+  
    ``` json
     {
         "require": {
