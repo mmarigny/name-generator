@@ -76,8 +76,7 @@ class Generator
         $ok = count($this->data[$countryCode][$gender]);
 
         $lastname = $this->data[$countryCode]['lastname'][rand(0, count($this->data[$countryCode]['lastname']) - 1)];
-        $firstname = $this->data[$countryCode][$gender][rand(0,
-            count($this->data[$countryCode][$gender]) - 1)];
+        $firstname = $this->data[$countryCode][$gender][rand(0, count($this->data[$countryCode][$gender]) - 1)];
 
         return [
             'firstname' => $firstname,
