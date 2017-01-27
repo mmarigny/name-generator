@@ -9,7 +9,7 @@ La liste des prenoms et noms français les plus courants est fourni dans le pack
 installation
 ------------
 
-#### Install composer : [how to install composer](https://getcomposer.org/download/))
+#### Install composer : [how to install composer](https://getcomposer.org/download/)
 
 ### Edit your composer.json
   1. Adding package to require in your composer.json:
