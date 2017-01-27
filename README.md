@@ -6,7 +6,7 @@ Genère des noms aléatoires basé sur des listes de prénom et nom de famille c
 La liste des prenoms et noms français les plus courants est fourni dans le package
 
 
-installation
+Installation
 ------------
 
 #### Install composer : [how to install composer](https://getcomposer.org/download/)
@@ -32,4 +32,4 @@ use Mmarigny\NameGenerator\Generator;
 $name = $generator->getName();
 ```
 
-## Contact: melvyn.marigny@gmail.com
+#### Contact: melvyn.marigny@gmail.com
