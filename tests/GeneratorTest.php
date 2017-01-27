@@ -1,32 +1,28 @@
 <?php
 
-namespace Mmarigny\NameGenerator;
-
-use PHPUnit_Framework_TestCase;
-
 class GeneratorTest extends PHPUnit_Framework_TestCase
 {
     public function testGenerate()
     {
-        $generator = new Generator();
-        $name = $generator->generate();
+        $generator = new Mmarigny\NameGenerator\Generator();
+        $name = $generator->getName();
         
         $this->assertInternalType('array', $name);
         $this->assertNotEmpty($name['firstname']);
         $this->assertNotEmpty($name['lastname']);
-        $this->assertEquals(['female', 'male'], $name['gender']);
+        $this->assertContains($name['gender'], ['female', 'male']);
         $this->assertNotEmpty($name['country']);
     }
 
     public function testGenerateCountryCode()
     {
-        $generator = new Generator();
-        $name = $generator->generate('FR');
+        $generator = new Mmarigny\NameGenerator\Generator();
+        $name = $generator->getName('FR');
         
         $this->assertInternalType('array', $name);
         $this->assertNotEmpty($name['firstname']);
         $this->assertNotEmpty($name['lastname']);
-        $this->assertEquals(['female', 'male'], $name['gender']);
+        $this->assertContains($name['gender'], ['female', 'male']);
         $this->assertNotEmpty($name['country']);
     }
 }
