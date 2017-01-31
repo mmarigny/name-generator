@@ -12,8 +12,8 @@ Installation
 #### Install composer : [how to install composer](https://getcomposer.org/download/)
 
 ### Edit your composer.json
-  1. Adding package to require in your composer.json:
-
+  1. Adding name-generator to require in your composer.json:
+  
    ``` json
     {
         "require": {
@@ -21,7 +21,7 @@ Installation
         }
     }
     ```
-  2. Run ```composer install```
+  2. Then in the command line : ```composer update```
 
 
 Usage 
@@ -34,7 +34,6 @@ print_r($name);
 ```
 
 #### output
-    ``` shell
     Array
     (
         [firstname] => Laurine
@@ -42,5 +41,5 @@ print_r($name);
         [gender] => female
         [country] => FR
     )
-    ```
+    
 #### Contact: melvyn.marigny@gmail.com
