@@ -17,7 +17,7 @@ class Generator
         if (false == file_exists($file))
             throw new \Exception('Unfound file : ' . $file);
 
-        return explode("\n", file_get_contents($file));
+        return explode("\n", str_replace("\r", '', file_get_contents($file)));
     }
 
 
